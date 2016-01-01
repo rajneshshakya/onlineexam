@@ -1,0 +1,91 @@
+@(message: String)
+
+@main("Welcome to Play") {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+    <body>
+    <div class="container">
+  
+  <div class="btn-group btn-group-justified">
+    <a href="http://localhost:9090" class="btn btn-primary">Home</a>
+    <a href="http://localhost:9090/reg" class="btn btn-primary">Registration</a>
+    <a href="http://localhost:9090/sign" class="btn btn-primary">Login</a>
+  </div>
+</div>
+    <center>
+<div class="container">
+	<form class="form-horizontal" id="registration" method='post' action='@routes.Application.add()'>
+		<fieldset>
+			<legend>add Questions</legend>
+			<div class="control-group">
+				<label class="control-label">Question:</label>
+				<div class="controls">
+					<input type="text" id="username" name="question">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">option1:</label>
+				<div class="controls">
+					<input type="text" id="password" name="option1">
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label">option2:</label>
+				<div class="controls">
+					<input type="text" id="email" name="option2">
+				</div>
+			</div>
+			
+			
+			<div class="control-group">
+				<label class="control-label">option3:</label>
+				<div class="controls">
+					<input type="text" id="email" name="option3">
+				</div>
+			</div>
+			
+			
+			<div class="control-group">
+				<label class="control-label">option4:</label>
+				<div class="controls">
+					<input type="text" id="email" name="option4">
+				</div>
+			</div>
+			
+			
+			<div class="control-group">
+				<label class="control-label">Right option:</label>
+				<div class="controls">
+					<input type="text" id="email" name="rightOption">
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label"></label>
+				<div class="controls">
+					<button type="submit" class="btn btn-success" >add</button>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+</center>
+</body>
+</html>	
+    
+    
+			    				
+    
+
+}

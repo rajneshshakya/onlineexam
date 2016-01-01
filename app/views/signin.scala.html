@@ -1,0 +1,50 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/ie10-viewport-bug-workaround.css">
+    <link href="signin.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <center><h2>Online Exams</h2></center>
+  <div class="btn-group btn-group-justified">
+    <a href="http://localhost:9090" class="btn btn-primary">Home</a>
+    <a href="http://localhost:9090/reg" class="btn btn-primary">Registration</a>
+    <a href="http://localhost:9090/sign" class="btn btn-primary">Login</a>
+  </div>
+</div>
+
+
+
+<div class="container">
+
+      <form class="form-index" action="@routes.Application.loginStu()" method="post" >
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword"  name="password1" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> 
+</body>
+</html>
+
+}

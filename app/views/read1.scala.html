@@ -1,0 +1,60 @@
+@(que:Questions)
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<center>
+<form action="@routes.Application.start()" method="post">
+<table  CELLSPACING=4 CELLPADDING=4>
+
+
+    <tr><th>@que.getQuestion()</th></tr>
+    <tr><td><input type="radio" name="rightOption" value=@que.getOption1()>@que.getOption1()</td><td><input type="radio" name="rightOption" value=@que.getOption2()>@que.getOption2()</td></tr>
+    <tr><td><input type="radio" name="rightOption" value=@que.getOption3()>@que.getOption3()</td><td><input type="radio" name="rightOption" value=@que.getOption4()>@que.getOption4()</td></tr>
+
+  </table>
+  <table  CELLSPACING=2 CELLPADDING=2>
+   <tr><td>
+            <div class="control-group">
+				<label class="control-label"></label>
+				<div class="controls">
+					<input type="submit" value="previous" name="submit" class="btn btn-success" >
+				</div>
+			</div>
+			</td>
+   
+   
+   
+   <td><div class="control-group">
+				<label class="control-label"></label>
+				<div class="controls">
+					<input type="submit" value="next" name="submit" class="btn btn-success" >
+				</div>
+			</div></td></tr>
+  
+   
+    </table>
+   
+   
+
+   <div class="control-group">
+				<label class="control-label"></label>
+				<div class="controls">
+				   
+					<input type="submit" value="submit" name="submit" class="btn btn-success" >
+				</div>
+			</div>
+   </form>
+   
+   
+   
+   
+   </center> 
+   </html>
